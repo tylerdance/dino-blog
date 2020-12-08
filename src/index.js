@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const post = {
+  title: "Dino Lab",
+  author: "Bopasaurus",
+  body: "React Day 1",
+  comments: ["Bootcamp is fun", "Bootcamp is halfway over", "Bootcamp is stress 100"]
+};
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App post={post} />
   </React.StrictMode>,
   document.getElementById('root')
 );
